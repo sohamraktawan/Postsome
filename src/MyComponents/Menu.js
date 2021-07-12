@@ -14,7 +14,7 @@ function Menu() {
     const yourPosts = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://post-some.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     
@@ -37,7 +37,7 @@ function Menu() {
     const authToken = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://post-some.herokuapp.com/auth', {token:token})
             .then(res=>{
                 console.log(res.data)
                 if(res.data === false){
@@ -59,7 +59,7 @@ function Menu() {
     const authToken1 = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://post-some.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     
@@ -82,7 +82,7 @@ function Menu() {
     const authToken2 = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://post-some.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     
@@ -111,7 +111,7 @@ function Menu() {
     useEffect(() => {
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://post-some.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     
@@ -129,7 +129,7 @@ function Menu() {
     const Trending = () =>{
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://post-some.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     

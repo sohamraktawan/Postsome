@@ -32,7 +32,7 @@ function Left() {
           id: post._id,
           user: user._id,
       };
-      axios.post('http://localhost:3001/delete', upobj)
+      axios.post('https://post-some.herokuapp.com/delete', upobj)
       .then(res=>{
           console.log(res)
       })
@@ -41,7 +41,7 @@ function Left() {
       })
     }
     useEffect(() => {
-      fetch("/posts")
+      fetch("https://post-some.herokuapp.com/posts")
         .then((res) => {
           if (res.ok) {
             return res.json();
@@ -63,7 +63,7 @@ function Left() {
         let token = localStorage.getItem("token");
         if (token) {
           axios
-            .post("http://localhost:3001/auth", { token: token })
+            .post("https://post-some.herokuapp.com/auth", { token: token })
             .then((res) => {
               if (res.data === false) {
                 history.push("/login");

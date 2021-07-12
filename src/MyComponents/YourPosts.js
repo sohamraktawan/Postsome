@@ -40,7 +40,7 @@ const onDelete = (post) =>{
     id: post._id,
     user: user._id,
   };
-  axios.post('http://localhost:3001/delete', upobj)
+  axios.post('https://post-some.herokuapp.com/delete', upobj)
   .then(res=>{
     console.log(res)
   })
@@ -51,7 +51,7 @@ const onDelete = (post) =>{
 
 
 useEffect(() => {
-  fetch("http://localhost:3001/posts")
+  fetch("https://post-some.herokuapp.com/posts")
     .then((res) => {
       if (res.ok) {
         return res.json();
@@ -67,7 +67,7 @@ useEffect(() => {
     });
             let token = localStorage.getItem('token');
         if(token){
-            axios.post('http://localhost:3001/auth', {token:token})
+            axios.post('https://post-some.herokuapp.com/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     
@@ -113,7 +113,7 @@ const upvote = (post) =>{
   })
 
   axios
-  .post("http://localhost:3001/upvote", upobj)
+  .post("https://post-some.herokuapp.com/upvote", upobj)
   .then((res) => {
     console.log(res);
   })

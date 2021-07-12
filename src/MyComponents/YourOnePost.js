@@ -67,7 +67,7 @@ function YourOnePost(props) {
     })
   
     axios
-    .post("http://localhost:3001/upvote", upobj)
+    .post("https://post-some.herokuapp.com/upvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -96,7 +96,7 @@ function YourOnePost(props) {
     })
   
     axios
-    .post("http://localhost:3001/downvote", upobj)
+    .post("https://post-some.herokuapp.com/downvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -128,7 +128,7 @@ function YourOnePost(props) {
     })
   
     axios
-    .post("http://localhost:3001/unupvote", upobj)
+    .post("https://post-some.herokuapp.com/unupvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -158,7 +158,7 @@ function YourOnePost(props) {
     })
   
     axios
-    .post("http://localhost:3001/undownvote", upobj)
+    .post("https://post-some.herokuapp.com/undownvote", upobj)
     .then((res) => {
       console.log(res);
     })

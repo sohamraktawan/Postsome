@@ -50,7 +50,7 @@ function SignUp() {
         }
         console.log(newUser)
         //axios.defaults.withCredentials = true;
-        axios.post('http://localhost:3001/signup', newUser )
+        axios.post('https://post-some.herokuapp.com/signup', newUser )
 
             .then(async (res)=>{
             
