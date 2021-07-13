@@ -89,7 +89,7 @@ function SignUp() {
             <div className="login_text2">
                 <h2>Postsome</h2>
             </div>
-        <div className="login" style={mystyle}>
+        <div className="login" >
             <h2 className='login_head'>Sign Up to Postsome</h2>
             <form action="">
                 <div><input onChange={handleChange} type="text" name="username" id="username" className="login_input"  value={input.username} autoComplete="off" placeholder="username"/></div>

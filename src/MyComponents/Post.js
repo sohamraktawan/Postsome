@@ -207,7 +207,7 @@ function Post(props) {
           <FaUser className="user_icon"/> 
           <div className="post_head_user"> {post1.username}</div>
           </div>
-          <RiPenNibLine className="user_icon"/>
+          <RiPenNibLine className="user_icon_nib"/>
           <div className="post_head_timestamp">{timeSince(post1.timeStamp)} ago</div>
         </div>
         <div className="post_body">
