@@ -90,7 +90,7 @@ function Left() {
     //   return () => clearTimeout(timer);
     // }, [user]);
   const handleClick = () =>{
-    window.location.href="/post"
+    window.location.href="http://postsome.netlify.app/post"
   }
 
     
