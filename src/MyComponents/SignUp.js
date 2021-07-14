@@ -3,6 +3,8 @@ import axios from 'axios'
 import {useState} from 'react'
 import {useHistory, Link} from 'react-router-dom'
 import '../comp.css'
+import {RiPenNibLine} from "react-icons/ri"
+
 
 const mystyle={
     height:'500px',
@@ -83,7 +85,7 @@ function SignUp() {
         <div className="container1">
         <div className='login_container'>
             <div className="login_text">
-                <h2 className="login_text_head">Postsome</h2>
+                <h2 className="login_text_head">Postsome<RiPenNibLine/></h2>
                 <div className='login_text_body'>Where your words, come alive!!</div>
             </div>
             <div className="login_text2">

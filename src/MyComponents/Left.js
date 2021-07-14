@@ -89,6 +89,9 @@ function Left() {
     //   }, 2000);
     //   return () => clearTimeout(timer);
     // }, [user]);
+  const handleClick = () =>{
+    window.location.href="/post"
+  }
 
     
 function timeSince(date) {
@@ -136,9 +139,9 @@ var count = 1
             <Link  className="trending_link_out" to={{
                 pathname: '/post',
                 state: { post: post, user:user }
-
+                
             }}>
-              <div className="trending_link_in">
+              <div onClick={handleClick} className="trending_link_in">
               <div className="trending_user_container"><div className="trending_user">{post.username}</div> <div className="trending_time">{timeSince(post.timeStamp)} ago</div></div>
               <div className="trending_title">{post.title}</div>
               </div>

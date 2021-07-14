@@ -196,8 +196,8 @@ function Post() {
     });
   }
 
-  function handleClick(){
-
+  function handleClick(e){
+    e.preventDefault();
     const newComment ={
       user:user1.username,
       comment:input.comment
@@ -308,9 +308,9 @@ function Post() {
       </div> 
       <form className="comment_form_container" action="">
            <div className="comment_input_container"><input className="comment_input" onChange={handleChange} type="text" id="comment"  value={input.comment} autoComplete="off" placeholder="Add a comment..."/></div>
-       
+           <div className="post_comment_container"><button className="post_comment_button" onClick={handleClick}><FaRegCommentDots className="upvote_icon"/> Comment</button></div>
          </form>
-      <div className="post_comment_container"><button className="post_comment_button" onClick={handleClick}><FaRegCommentDots className="upvote_icon"/> Comment</button></div>
+      
       <div className="comment_number">{nocomments} Comments</div>
          <div>{
             comments.map(comm=>{
