@@ -2500,7 +2500,7 @@ body{
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
-    height: 30px;
+    min-height: 30px;
     margin-top: 10px;
 }
 .trending_column{
