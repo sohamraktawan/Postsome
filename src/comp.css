@@ -2079,7 +2079,7 @@ body{
 }
 .post_body_title{
     color: rgb(23, 23, 58);
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Righteous', cursive;
     width: 50%;
     text-align: center;
@@ -2497,7 +2497,7 @@ body{
 }
 .trending_title{
     font-family: 'Righteous', cursive;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 10px;
     min-height: 30px;
