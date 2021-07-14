@@ -65,7 +65,6 @@ function App() {
           <Route exact path='/post'>
           <Header/>
           <div className="posts_container">
-            <Left/>
             <div className="posts_column">            
             <OnePost/>
             </div>
