@@ -2081,7 +2081,7 @@ body{
     color: rgb(23, 23, 58);
     font-size: 20px;
     font-family: 'Righteous', cursive;
-    width: 50%;
+    width:80%;
     text-align: center;
     margin: auto;
     padding-top: 20px;
@@ -2457,7 +2457,7 @@ body{
     width: 100%;
     box-shadow: 1px 1px 10px grey;
     border-radius: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .trending_link_in:hover{
     background-color: rgb(230, 230, 230);
