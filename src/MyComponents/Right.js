@@ -84,24 +84,7 @@ function Right() {
     }
 
     
-    useEffect(() => {
-        let token = localStorage.getItem('token');
-        if(token){
-            axios.post('https://post-some.herokuapp.com/auth', {token:token})
-            .then(res=>{
-                if(res.data === false){
-                    
-                    history.push("/login");
-                }else{
-                    console.log("settting")
-                    setUser(res.data);
-                }
-            })
-            .catch((err) =>{
-                console.log(err);
-            })
-        }
-    },[])
+
     return (
         <div className="right">
             <div>
