@@ -43,7 +43,7 @@ function Login() {
         }
         console.log(newUser)
     
-        axios.post('https://post-some.herokuapp.com/login', newUser)
+        axios.post('https://postsome-backend-production.up.railway.app/login', newUser)
 
             .then(async (res)=>{
             

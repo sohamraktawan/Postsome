@@ -60,7 +60,7 @@ function timeSince(date) {
             desc: input.desc
         }
         console.log(newPost) 
-        axios.post('https://post-some.herokuapp.com/create', newPost)
+        axios.post('https://postsome-backend-production.up.railway.app/create', newPost)
         .then(res=>{
             console.log(res);
             history.push("/home")
@@ -74,7 +74,7 @@ function timeSince(date) {
     useEffect(() => {
         let token = localStorage.getItem('token');
         if(token){
-            axios.post('https://post-some.herokuapp.com/auth', {token:token})
+            axios.post('https://postsome-backend-production.up.railway.app/auth', {token:token})
             .then(res=>{
                 if(res.data === false){
                     

@@ -68,7 +68,7 @@ function Post(props) {
     })
   
     axios
-    .post("https://post-some.herokuapp.com/upvote", upobj)
+    .post("https://postsome-backend-production.up.railway.app/upvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -96,7 +96,7 @@ function Post(props) {
     })
   
     axios
-    .post("https://post-some.herokuapp.com/downvote", upobj)
+    .post("https://postsome-backend-production.up.railway.app/downvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -126,7 +126,7 @@ function Post(props) {
     })
   
     axios
-    .post("https://post-some.herokuapp.com/unupvote", upobj)
+    .post("https://postsome-backend-production.up.railway.app/unupvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -156,7 +156,7 @@ function Post(props) {
     })
   
     axios
-    .post("https://post-some.herokuapp.com/undownvote", upobj)
+    .post("https://postsome-backend-production.up.railway.app/undownvote", upobj)
     .then((res) => {
       console.log(res);
     })

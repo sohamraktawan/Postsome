@@ -52,7 +52,7 @@ function SignUp() {
         }
         console.log(newUser)
         //axios.defaults.withCredentials = true;
-        axios.post('https://post-some.herokuapp.com/signup', newUser )
+        axios.post('https://postsome-backend-production.up.railway.app/signup', newUser )
 
             .then(async (res)=>{
             

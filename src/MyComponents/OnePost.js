@@ -37,13 +37,13 @@ function Post() {
     let upobj={
         id:post1._id
     }
-    axios.post("https://post-some.herokuapp.com/onepost", upobj)
+    axios.post("https://postsome-backend-production.up.railway.app/onepost", upobj)
     .then(res=>{
         setpost1(res.data)
     })
     let token = localStorage.getItem('token');
     if(token){
-        axios.post('https://post-some.herokuapp.com/auth', {token:token})
+        axios.post('https://postsome-backend-production.up.railway.app/auth', {token:token})
         .then(res=>{
             if(res.data === false){
                 
@@ -96,7 +96,7 @@ function Post() {
     })
   
     axios
-    .post("https://post-some.herokuapp.com/upvote", upobj)
+    .post("https://postsome-backend-production.up.railway.app/upvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -125,7 +125,7 @@ function Post() {
     })
   
     axios
-    .post("https://post-some.herokuapp.com/downvote", upobj)
+    .post("https://postsome-backend-production.up.railway.app/downvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -156,7 +156,7 @@ function Post() {
     })
   
     axios
-    .post("https://post-some.herokuapp.com/unupvote", upobj)
+    .post("https://postsome-backend-production.up.railway.app/unupvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -187,7 +187,7 @@ function Post() {
     })
   
     axios
-    .post("https://post-some.herokuapp.com/undownvote", upobj)
+    .post("https://postsome-backend-production.up.railway.app/undownvote", upobj)
     .then((res) => {
       console.log(res);
     })
@@ -212,7 +212,7 @@ function Post() {
       return comms
     })
     setNocomments(prev=>{return prev+1})
-    axios.post('https://post-some.herokuapp.com/comment', upobj)
+    axios.post('https://postsome-backend-production.up.railway.app/comment', upobj)
     .then(res=>{
         console.log(res);
     })

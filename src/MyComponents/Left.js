@@ -32,7 +32,7 @@ function Left() {
           id: post._id,
           user: user._id,
       };
-      axios.post('https://post-some.herokuapp.com/delete', upobj)
+      axios.post('https://postsome-backend-production.up.railway.app/delete', upobj)
       .then(res=>{
           console.log(res)
       })
@@ -41,7 +41,7 @@ function Left() {
       })
     }
     useEffect(() => {
-      fetch("https://post-some.herokuapp.com/posts")
+      fetch("https://postsome-backend-production.up.railway.app/posts")
         .then((res) => {
           if (res.ok) {
             return res.json();
