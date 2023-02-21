@@ -1,10 +1,13 @@
+
 Postsome is a fully responsive realtime CRUD application built with MERN stack consisting of a complex database structure and a highly interactive and dynamic frontend.
+
 
 Users can post their thoughts, upvote/downvote others'posts and comment on them <br>
 It also showcases realtime trending and upvotes, downvotes and comments on users'posts <br>
 Built using NodeJS, ReactJS, MongoDB and ExpressJS <br>
 The app is equipped with JWT authentication <br>
 The frontend is deployed on Netlify and backend on Heroku (discontinued) <br>
+Backend Repo Link : https://github.com/sohamraktawan/Postsome-Backend
 
 ## Login/SignUp Page
 ![Login Page](https://user-images.githubusercontent.com/85399779/219852150-ca48d15f-3760-4b29-95f8-ee8b7d204e87.png)
